@@ -1,0 +1,206 @@
+.PresentationBlock {
+    background-color: dodgerblue;
+    color: white;
+    padding-left: 85px;
+    height: 640px;
+    display: flex;
+    flex-flow: column;
+    background-image: url(../../media/presentation-background-h.jpg);
+    background-position: right 25% bottom 50%;
+    background-size: cover;
+}
+
+.PresentationBlock-TopCaption {
+    margin-top: 90px;
+}
+
+.PresentationCaption {
+    height: 35px;
+}
+
+.PresentationCaption-Text {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.PresentationCaption-Text_heavy {
+    font-weight: 900;
+}
+
+.PresentationBlock-Heading {
+    margin-top: 55px;
+} 
+
+.PresentationHeading {
+    height: 75px;
+    position: relative;
+}
+
+.PresentationHeading-Text {
+    font-weight: 900;
+    font-size: 90px;
+    position: absolute;
+    top: -15px;
+}
+
+.PresentationBlock-BottomCaption {
+    margin-top: 60px;
+}
+
+.PresentationBlock-Button {
+    margin-top: 125px;
+}
+
+.PresentationButton {
+    height: 75px;
+    width: 330px;
+    font-size: 28px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    border: 1.5px solid white;
+    border-radius: 12px;
+    background: none;
+    display: block;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    -o-user-select: none; 
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+
+.PresentationButton:active, .PresentationButton:focus {
+    outline: none;
+}
+
+.PresentationButton::-moz-focus-inner {
+  border: 0;
+}
+
+.PresentationButton:hover:active {
+  border: 1.5px solid white;
+}
+
+@media all and (max-width: 1150px) {
+    .PresentationBlock {
+        background-position: right 50% bottom 50%;
+    } 
+}
+
+@media all and (max-width: 650px) {
+    .PresentationBlock {
+        height: 1090px;
+        align-items: center;
+        padding-left: 0px;
+        background-image: url(../../media/presentation-background-v.jpg);
+        background-position: center;
+    }
+    
+    .PresentationBlock-TopCaption {
+        margin-top: 60px;
+    }
+    
+    .PresentationCaption {
+        height: 45px;
+    }
+    
+    .PresentationCaption-Text {
+        font-size: 26px;
+    }
+    
+    .PresentationBlock-Heading {
+        margin-top: 50px;
+    } 
+    
+    .PresentationHeading {
+        height: 55px;
+        position: static;
+    }
+    
+    .PresentationHeading-Text {
+        font-size: 47px;
+        position: static;
+    }
+    
+    .PresentationBlock-BottomCaption {
+        margin-top: 55px;
+    }
+
+    .PresentationCaption_mobileBottom {
+        height: 80px;
+        line-height: 1.4;
+        text-align: center;
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+    
+    .PresentationBlock-Button {
+        margin-top: 55px;
+    }
+    
+    .PresentationButton {
+        height: 65px;
+        width: 280px;
+        font-size: 28px;
+        color: rgb(0, 123, 255);
+        border: none;
+        border-radius: 7px;
+        background: white;
+        box-shadow: 2px 2px 12px rgb(0, 93, 215);;
+    }
+    
+    .PresentationButton::-moz-focus-inner {
+      border: 0;
+    }
+    
+    .PresentationButton:hover:active {
+      background-color: whitesmoke;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .PresentationBlock {
+        height: 218vw;
+    }
+    
+    .PresentationBlock-TopCaption {
+        margin-top: 12vw;
+    }
+    
+    .PresentationCaption {
+        height: 9vw;
+    }
+    
+    .PresentationCaption-Text {
+        font-size: 5vw;
+    }
+    
+    .PresentationBlock-Heading {
+        margin-top: 10vw;
+    } 
+    
+    .PresentationHeading {
+        height: 11vw;
+    }
+    
+    .PresentationHeading-Text {
+        font-size: 9vw;
+    }
+    
+    .PresentationBlock-BottomCaption {
+        margin-top: 11vw;
+    }
+    .PresentationCaption_mobileBottom {
+        height: 16vw;
+    }
+    
+    .PresentationBlock-Button {
+        margin-top: 11vw;
+    }
+    
+    .PresentationButton {
+        height: 13vw;
+        width: 56vw;
+        font-size: 5.5vw;
+        border-radius: 1.2vw;
+    }
+}

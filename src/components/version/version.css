@@ -1,0 +1,15 @@
+.Version {
+    margin-bottom: 40px;
+}
+
+@media all and (max-width: 650px) {
+    .Version {
+        margin-bottom: 35px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .Version {
+        margin-bottom: 7vw;
+    }
+}

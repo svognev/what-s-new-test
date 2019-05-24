@@ -1,0 +1,104 @@
+.TitleBlock {
+    height: 395px;
+    display: flex;
+    flex-flow: column;
+}
+
+.TitleBlock-Heading {
+    margin-top: 130px;
+}
+
+.TitleHeading {
+    height: 65px;
+    text-align: center;
+}
+
+.TitleHeading-Text {
+    font-size: 53px;
+    font-weight: 700;
+}
+
+.TitleBlock-Subheading {
+    margin-top: 60px;
+}
+
+.TitleSubheading {
+    height: 70px;
+    text-align: center;
+    padding-left: 18%;        
+    padding-right: 18%;
+}
+
+.SubtitleHeading-Text {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+
+@media all and (max-width: 650px) {
+    .mainContent {
+        min-width: 0;
+    }
+
+    .TitleBlock {
+        height: 550px;
+    }
+    
+    .TitleBlock-Heading {
+        margin-top: 125px;
+    }
+    
+    .TitleHeading {
+        height: 65px;
+    }
+    
+    .TitleHeading-Text {
+        font-size: 47px;
+    }
+    
+    .TitleBlock-Subheading {
+        margin-top: 50px;
+    }
+    
+    .TitleSubheading {
+        height: 185px;
+        padding-left: 16%;
+        padding-right: 16%;
+    }
+    
+    .SubtitleHeading-Text {
+        font-size: 26px;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    .TitleBlock {
+        height: 110vw;
+    }
+    
+    .TitleBlock-Heading {
+        margin-top: 25vw;
+    }
+    
+    .TitleHeading {
+        height: 13vw;
+    }
+    
+    .TitleHeading-Text {
+        font-size: 9vw;
+    }
+    
+    .TitleBlock-Subheading {
+        margin-top: 10vw;
+    }
+    
+    .TitleSubheading {
+        height: 37vw;
+    }
+    
+    .SubtitleHeading-Text {
+        font-size: 5vw;
+    }
+}

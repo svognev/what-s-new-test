@@ -1,0 +1,163 @@
+.VersionInfo {
+    height: 515px;
+    display: flex;
+    flex-flow: column;
+}
+
+.VersionInfo_mobile {
+    display: none;
+}
+
+.VersionInfo-FeaturesList {
+    margin-top: 80px;
+} 
+
+.FeaturesList {
+    display: flex;
+    overflow: hidden;
+}
+
+.VersionInfo-SeeAll {
+    margin-top: 65px;
+}
+.SeeAllFeatures {
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SeeAllFeatures-Link {
+    font-weight: 400;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.SeeAllFeatures-Arrow {
+    height: 15px;
+    width: 10px;
+    margin-left: 5px;
+    background-image: url(../../media/icon-grey-arrow.svg);
+    display: inline-block;
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+
+@media all and (max-width: 650px) {
+    .VersionInfo {
+        display: none;
+    }
+    
+    .VersionInfo_mobile {
+        display: flex;
+        flex-flow: column;
+        overflow: hidden;
+    }
+    
+    .VersionInfo-FeaturesList {
+        margin-top: 35px;
+    } 
+    
+    .FeaturesList {
+        padding-left: 15px;
+        flex-wrap: wrap;
+        min-width: 600px;
+    }
+    
+    .Feature {
+        width: 240px;
+        height: 265px;
+        margin-right: 30px;
+        margin-bottom: 35px;
+    }
+    
+    .Feature-Icon {
+        margin-top: 25px;
+        width: 70px;
+        height: 80px;
+    }
+    
+    .Feature-Title {
+        margin-top: 10px;
+        height: 60px;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15%;
+        padding-right: 15%; 
+    }
+    
+    .Feature-Caption {
+        margin-top: 5px;
+        height: 65px;
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+    }
+    
+    .Feature-TitleText {
+        font-size: 21px;
+        font-weight: 400;
+    }
+    
+    .VersionInfo-SeeAll {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .VersionInfo-FeaturesList {
+        margin-top: 7vw;
+    } 
+    
+    .FeaturesList {
+        padding-left: 11vw;
+        min-width: 0;
+        display: flex;
+    }
+    
+    .Feature {
+        width: 62vw;
+        height: 70vw;
+        margin-right: 8vw;
+        margin-bottom: 9vw;
+        align-self: center;
+    }
+    
+    .Feature-Icon {
+        margin-top: 6.5vw;
+        width: 18vw;
+        height: 21vw;
+    }
+    
+    .Feature-Title {
+        margin-top: 2.5vw;
+        height: 15.5vw;
+    }
+    
+    .Feature-Caption {
+        margin-top: 1.3vw;
+        height: 17vw;
+    }
+    .Feature-CaptionText {
+        font-size: 4vw;
+    }
+    
+    .Feature-TitleText {
+        font-size: 5.2vw;
+    }
+    
+    .VersionInfo-SeeAll {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    .SeeAllFeatures-Link {
+        font-size: 5.2vw;
+    }
+    .SeeAllFeatures-Arrow {
+        height: 3.3vw;
+        margin-left: 1vw;
+    }
+}

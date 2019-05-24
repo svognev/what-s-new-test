@@ -1,0 +1,37 @@
+.VersionsBlock {
+    display: flex;
+    flex-flow: column;
+}
+
+.VersionsBlock-List {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.VersionsList {
+    padding-left: 80px;
+    display: flex;
+    flex-flow: column;
+}
+
+@media all and (max-width: 650px) {
+    .VersionsBlock-List {
+        margin-top: 70px;
+        margin-bottom: 200px;
+    }
+    
+    .VersionsList {
+        padding-left: 40px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .VersionsBlock-List {
+        margin-top: 14vw;
+        margin-bottom: 40vw;
+    }
+    
+    .VersionsList {
+        padding-left: 8vw;
+    }
+}
