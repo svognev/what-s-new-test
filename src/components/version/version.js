@@ -19,10 +19,12 @@ class Version extends Component {
 
     render() {
         const { features, ...others } = this.props.info;
+        const { lang } = this.props;
+
         return (
             <div className="Version">
-                <VersionTitle {...others} eventHandler={this.openVersionInfo} opened={this.state.opened} />
-                { this.state.opened ? <VersionInfo features={features} /> : null }
+                <VersionTitle {...others} eventHandler={this.openVersionInfo} opened={this.state.opened} lang={lang} />
+                { this.state.opened ? <VersionInfo { ...{features, lang} } /> : null }
             </div>
         );
     }

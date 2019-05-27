@@ -9,7 +9,7 @@ class App extends Component {
   infoService = new VersionInfoService();
   
   state = {
-    lang: "en",
+    lang: this.props.lang,
     versions: null,
   }
 
@@ -26,24 +26,29 @@ class App extends Component {
       this.infoService.getAllVersionsEN().then(versions => {
         this.onVersionsLoaded(versions);
       });
+    } else if (this.state.lang === "de") {
+      this.infoService.getAllVersionsDE().then(versions => {
+        this.onVersionsLoaded(versions);
+      });
     }
   }
   
 
   render() {
+    const { lang, versions } = this.state;
     if (this.state.versions) {
       const { number, title, innovation } = this.state.versions[0];
       return (
         <div className="App">
-          <TitleBlock />
-          <PresentationBlock { ...{number, title, innovation} }/>
-          <VersionsBlock versions={this.state.versions} />
+          <TitleBlock { ...{lang} } />
+          <PresentationBlock { ...{lang, number, title, innovation} }/>
+          <VersionsBlock { ...{lang, versions} } />
         </div>
       );
     } else {
       return (
         <div className="App">
-          <TitleBlock />
+          <TitleBlock { ...{lang} }/>
         </div>
       );
     }

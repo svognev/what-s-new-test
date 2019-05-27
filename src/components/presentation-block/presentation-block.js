@@ -1,12 +1,24 @@
 import React from "react";
 import "./presentation-block.css";
 
-const PresentationBlock = ({number, title, innovation}) => {
+const PresentationBlock = ({lang, number, title, innovation}) => {
+    const captionText1 = lang === "en" 
+        ? "A new feature of " 
+        : "Neue Funktionen von ";
+    
+    const captionText2 = lang === "en" 
+        ? "version " 
+        : "Version ";
+
+    const buttonText = lang === "en" 
+        ? "READ MORE" 
+        : "MEHR LESEN"; 
+        
     return (
         <div className="PresentationBlock">
         <div className="PresentationBlock-TopCaption PresentationCaption">
           <span className="PresentationCaption-Text">
-            A new feature of <span className="PresentationCaption-Text_heavy">version {number}</span></span>
+            {captionText1}<span className="PresentationCaption-Text_heavy">{captionText2}{number}</span></span>
         </div>
         <div className="PresentationBlock-Heading PresentationHeading">
           <span className="PresentationHeading-Text">
@@ -20,7 +32,7 @@ const PresentationBlock = ({number, title, innovation}) => {
         </div>
         <div className="PresentationBlock-Button">
           <button className="PresentationButton">
-            READ MORE
+            {buttonText}
           </button>
         </div>
       </div>

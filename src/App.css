@@ -1,16 +1,35 @@
 .App {
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   width: 100%;
-  min-width: 500px;
   font-family: "Roboto", sans-serif;
   max-width: 1900px;
   min-width: 750px;
-  border: 1px solid silver;
+  margin-top: 75px;
+}
+
+@media all and (max-width: 980px) {
+  .App {
+    margin-top: 0;
+  }
 }
 
 @media all and (max-width: 650px) {
   .App {
       min-width: 0;
   }
+}
+
+@media all and (max-width: 497px) {
+  .App {
+    margin-top: 75px;
+  }
+}
+
+.App button {
+  padding: 0 !important;
+}
+
+.App a {
+  color: black !important;
 }

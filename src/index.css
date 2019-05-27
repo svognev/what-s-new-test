@@ -1,20 +1,9 @@
-#root {
+#root_en, #root_de {
   display: flex;
   flex-flow: column;
-  align-items: center;
+  align-items: center;  
 }
 
 body {
   margin: 0;
-}
-
-.App {
-  padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-  min-width: 500px;
-  font-family: "Roboto", sans-serif;
-  max-width: 1900px;
-  min-width: 750px;
-  border: 1px solid silver;
 }

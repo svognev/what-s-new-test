@@ -13,10 +13,16 @@
     text-align: center;
 }
 
+.TitleHeading_de {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
 .TitleHeading-Text {
     font-size: 53px;
     font-weight: 700;
 }
+
 
 .TitleBlock-Subheading {
     margin-top: 60px;
@@ -29,10 +35,25 @@
     padding-right: 18%;
 }
 
+.TitleSubheading_de {
+    padding-left: 12%;        
+    padding-right: 12%;
+}
+
 .SubtitleHeading-Text {
     font-size: 22px;
     font-weight: 300;
     line-height: 1.4;
+}
+
+@media all and (max-width: 910px) {
+    .TitleBlock-Heading {
+        margin-top: 95px;
+    }
+    .TitleBlock-Heading_de {
+        margin-top: 85px;
+        margin-bottom: 25px;
+    }
 }
 
 
@@ -47,6 +68,11 @@
     
     .TitleBlock-Heading {
         margin-top: 125px;
+    }
+    
+    .TitleBlock-Heading_de {
+        margin-top: 85px;
+        margin-bottom: 25px;
     }
     
     .TitleHeading {
@@ -70,6 +96,7 @@
     .SubtitleHeading-Text {
         font-size: 26px;
     }
+    
 
 }
 
@@ -80,6 +107,11 @@
     
     .TitleBlock-Heading {
         margin-top: 25vw;
+    }
+
+    .TitleBlock-Heading_de {
+        margin-top: 17vw;
+        margin-bottom: 5vw;
     }
     
     .TitleHeading {

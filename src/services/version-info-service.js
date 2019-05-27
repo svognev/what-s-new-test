@@ -14,6 +14,11 @@ class VersionInfoService {
         return versions;
     }
 
+    async getAllVersionsDE() {
+        const versions = await this.getInfo("/de");
+        return versions;
+    }
+
 }
 
 export default VersionInfoService;
