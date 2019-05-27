@@ -11,7 +11,7 @@ const VersionTitle = (props) => {
 
     const releaseText = lang === "en" 
         ? "released on  " 
-        : "veröffentlicht am ";
+        : "";
     
     return (
         <div className="VersionTitle">

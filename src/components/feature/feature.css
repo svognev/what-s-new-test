@@ -46,10 +46,26 @@
     line-height: 1.3;
 }
 
+@media all and (max-width: 1400px) {
+    .Feature {
+        margin-left: 10px;
+        margin-right: 20px;
+        width: 375px;
+        min-width: 375px;
+        height: 295px;
+    }
+
+    .Feature-Title {
+        width: 80%;
+    }
+}
+
 @media all and (max-width: 650px) {
     .Feature {
         width: 240px;
+        min-width: 0;
         height: 265px;
+        margin-left: 0;
         margin-right: 30px;
         margin-bottom: 35px;
     }
