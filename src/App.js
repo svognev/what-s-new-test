@@ -35,14 +35,15 @@ class App extends Component {
     const { lang, versions } = this.state;
     if (versions) {
       const { number, title, innovation } = versions[0];
-      const { changeLang } = window;
+      const { changeLang, scrollTo } = window;
 
       return (
         <div className="App">
           <Router>
             <Route path="/" exact
               render={({history}) => {
-                history.push(`/en`)
+                history.push(`/en`);
+                scrollTo(0, 0);
 
                   return (
                     <div>
@@ -56,6 +57,7 @@ class App extends Component {
             <Route path={`/${lang}`} exact
               render={({}) => {
                  changeLang(lang);
+                 scrollTo(0, 0);
 
                  return (
                    <div>
@@ -70,6 +72,7 @@ class App extends Component {
               render={({match, history}) => {
                changeLang(lang);
                const { id } = match.params;
+               scrollTo(0, 0);
 
                if (isValidId(versions, id)) {
                  replaceLangLinks(id);
