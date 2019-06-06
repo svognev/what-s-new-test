@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/what-s-new-test/static/css/main.ca435d25.chunk.css",
-    "main.js": "/what-s-new-test/static/js/main.a8e31976.chunk.js",
-    "main.js.map": "/what-s-new-test/static/js/main.a8e31976.chunk.js.map",
+    "main.css": "/what-s-new-test/static/css/main.e0949eb0.chunk.css",
+    "main.js": "/what-s-new-test/static/js/main.59bcaa47.chunk.js",
+    "main.js.map": "/what-s-new-test/static/js/main.59bcaa47.chunk.js.map",
     "runtime~main.js": "/what-s-new-test/static/js/runtime~main.34cc18f6.js",
     "runtime~main.js.map": "/what-s-new-test/static/js/runtime~main.34cc18f6.js.map",
-    "static/js/2.548fb7bd.chunk.js": "/what-s-new-test/static/js/2.548fb7bd.chunk.js",
-    "static/js/2.548fb7bd.chunk.js.map": "/what-s-new-test/static/js/2.548fb7bd.chunk.js.map",
+    "static/js/2.cd9bcdff.chunk.js": "/what-s-new-test/static/js/2.cd9bcdff.chunk.js",
+    "static/js/2.cd9bcdff.chunk.js.map": "/what-s-new-test/static/js/2.cd9bcdff.chunk.js.map",
     "index.html": "/what-s-new-test/index.html",
-    "precache-manifest.6ca1a3c03f4b3bf14f83d6f65eef806a.js": "/what-s-new-test/precache-manifest.6ca1a3c03f4b3bf14f83d6f65eef806a.js",
+    "precache-manifest.1879422060453bedf2545b97c6406ee1.js": "/what-s-new-test/precache-manifest.1879422060453bedf2545b97c6406ee1.js",
     "service-worker.js": "/what-s-new-test/service-worker.js",
-    "static/css/main.ca435d25.chunk.css.map": "/what-s-new-test/static/css/main.ca435d25.chunk.css.map",
+    "static/css/main.e0949eb0.chunk.css.map": "/what-s-new-test/static/css/main.e0949eb0.chunk.css.map",
     "static/media/version-title.css": "/what-s-new-test/static/media/icon-arrow-up.d43b0582.svg",
     "static/media/version-info.css": "/what-s-new-test/static/media/icon-grey-arrow.d9e67eeb.svg",
-    "static/media/presentation-block.css": "/what-s-new-test/static/media/presentation-background-v.b90e0a93.jpg"
+    "static/media/presentation-block.css": "/what-s-new-test/static/media/presentation-background-v.b90e0a93.jpg",
+    "static/media/version-heading-block.css": "/what-s-new-test/static/media/version-title-background.06565625.jpg"
   }
 }
