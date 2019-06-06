@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
+import { isValidId,  replaceLangLinks } from "./helpers";
 import VersionInfoService from "./services/version-info-service";
 import TitleBlock from "./components/title-block";
 import PresentationBlock from "./components/presentation-block/presentation-block";
 import VersionsBlock from "./components/versions-block";
+import VersionPage from "./components/version-page";
 
 class App extends Component {
   infoService = new VersionInfoService();
@@ -11,6 +14,7 @@ class App extends Component {
   state = {
     lang: this.props.lang,
     versions: null,
+    currentVersion: null,
   }
 
   componentDidMount() {
@@ -22,36 +26,82 @@ class App extends Component {
   }
 
   updateVersions = () => {
-    if (this.state.lang === "en") {
-      this.infoService.getAllVersionsEN().then(versions => {
-        this.onVersionsLoaded(versions);
-      });
-    } else if (this.state.lang === "de") {
-      this.infoService.getAllVersionsDE().then(versions => {
-        this.onVersionsLoaded(versions);
-      });
-    }
+    this.infoService.getAllVersions(this.state.lang).then(versions => {
+      this.onVersionsLoaded(versions);
+    });
   }
-  
 
   render() {
     const { lang, versions } = this.state;
-    if (this.state.versions) {
-      const { number, title, innovation } = this.state.versions[0];
+    if (versions) {
+      const { number, title, innovation } = versions[0];
+      const { changeLang } = window;
+
       return (
         <div className="App">
-          <TitleBlock { ...{lang} } />
-          <PresentationBlock { ...{lang, number, title, innovation} }/>
-          <VersionsBlock { ...{lang, versions} } />
-        </div>
-      );
-    } else {
-      return (
-        <div className="App">
-          <TitleBlock { ...{lang} }/>
+          <Router>
+            <Route path="/" exact
+              render={({history}) => {
+                history.push(`/en`)
+
+                  return (
+                    <div>
+                      <TitleBlock { ...{lang} } />
+                      <PresentationBlock { ...{lang, number, title, innovation} } />
+                      <VersionsBlock { ...{lang, versions} } />
+                    </div>
+                  );
+                }} />
+
+            <Route path={`/${lang}`} exact
+              render={({}) => {
+                 changeLang(lang);
+
+                 return (
+                   <div>
+                     <TitleBlock { ...{lang} } />
+                     <PresentationBlock { ...{lang, number, title, innovation} } />
+                     <VersionsBlock { ...{lang, versions} } />
+                   </div>
+                 );
+               }} />
+
+            <Route path={`/${lang}/:id`} 
+              render={({match, history}) => {
+               changeLang(lang);
+               const { id } = match.params;
+
+               if (isValidId(versions, id)) {
+                 replaceLangLinks(id);
+
+                 return (
+                   <div>
+                     <VersionPage { ...{lang} } versionNumber={`${id.replace("-", ".")}`} />
+                   </div>
+                 );
+                 
+               } else {
+                 history.push(`/${lang}`);
+
+                 return (
+                   <div>
+                     <TitleBlock { ...{lang} } />
+                     <PresentationBlock { ...{lang, number, title, innovation} } />
+                     <VersionsBlock { ...{lang, versions} } />
+                   </div>
+                 );
+               }                      
+              }} />
+            
+          </Router>
         </div>
       );
     }
+
+    return (
+      <div className="App">
+      </div>
+    );
   } 
 }
 

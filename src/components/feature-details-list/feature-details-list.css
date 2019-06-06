@@ -1,0 +1,12 @@
+
+.FeatureDetailsList {
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+@media all and (max-width: 770px) {
+    .FeatureDetailsList {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+}

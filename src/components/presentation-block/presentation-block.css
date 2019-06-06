@@ -8,6 +8,7 @@
     background-image: url(../../media/presentation-background-h.jpg);
     background-position: right 25% bottom 50%;
     background-size: cover;
+    min-width: 750px;
 }
 
 .PresentationBlock-TopCaption {
@@ -16,7 +17,7 @@
 
 .PresentationCaption {
     height: 35px;
-    padding-right: 33%;
+    padding-right: 50%;
 }
 
 .PresentationCaption-Text {
@@ -86,6 +87,9 @@
     .PresentationBlock {
         background-position: right 50% bottom 50%;
     } 
+    .PresentationCaption {
+        padding-right: 33%;
+    }
 }
 
 @media all and (max-width: 650px) {
@@ -95,6 +99,7 @@
         padding-left: 0px;
         background-image: url(../../media/presentation-background-v.jpg);
         background-position: center;
+        min-width: 0;
     }
     
     .PresentationBlock-TopCaption {

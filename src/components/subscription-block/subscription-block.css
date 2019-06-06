@@ -1,0 +1,439 @@
+
+.SubscriptionBlock {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    /*background-image: url(../media/form-back-1.png), url(../media/form-back-2.png);*/
+    background-repeat: no-repeat, no-repeat;
+    background-size: 250px, 250px;
+    background-position: top left, top right;
+}
+
+.SubscriptionForm {
+    background-color: white;
+    box-shadow: 0px 0px 10px darkgrey;
+    border-radius: 10px;
+    width: 1070px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.SubscriptionForm-Heading {
+    margin-top: 90px;
+    height: 45px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.SubscriptionForm-HeadingText {
+    font-size: 47px;
+    color: rgb(0, 123, 255);
+    font-weight: 700; 
+}
+
+.SubscriptionForm-Subheading {
+    margin-top: 35px;
+    margin-bottom: 70px;
+    height: 35px;
+    display: flex;
+    justify-content: center; 
+}
+
+.SubscriptionForm-Subheading_de {
+    padding-right: 8%;
+    padding-left: 8%;
+    text-align: center;
+}
+
+.SubscriptionForm-SubheadingText {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.SubscriptionForm-InputList {
+    display: flex;
+    flex-flow: column;
+}
+
+.SubscriptionForm-NameInputs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.SubscriptionInput {
+    height: 105px;
+    width: 260px;
+    margin-bottom: 40px;
+}
+
+.SubscriptionInput_surname {
+    display: inline-block;
+}
+
+.SubscriptionInput_name {
+    margin-right: 50px;
+}
+
+.SubscriptionInput_email {
+    width: 570px;
+}
+
+.SubscriptionForm-PrivacyCaption {
+    height: 20px;
+}
+
+.SubscriptionForm-PrivacyCaptionText {
+    font-size: 16px;
+    color: grey;
+}
+
+.SubscriptionForm-PrivacyCaptionText_link {
+    font-style: italic;
+    color: rgb(0, 123, 255);
+    cursor: pointer;
+}
+
+.SubscriptionForm-Button {
+    margin-top: 70px;
+    margin-bottom: 85px;
+    height: 60px;
+    width: 260px;
+    background-color: rgb(0, 123, 255);
+    color: white;
+    font-size: 24px;
+    border-radius: 5px;
+    border: 0;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    -o-user-select: none; 
+    -webkit-user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.SubscriptionForm-Button:active, .SubscriptionForm-Button:focus {
+    outline: none;
+}
+
+.SubscriptionForm-Button::-moz-focus-inner {
+    border: 0;
+}
+
+.SubscriptionInput-Title {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.SubscriptionInput-TitleText {
+    color: darkgrey;
+    font-size: 26px;
+    font-weight: 300;
+    margin-left: 5px;
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    -o-user-select: none; 
+    -webkit-user-select: none;
+}
+
+.SubscriptionInput-TitleText_red {
+    color: crimson;
+    font-weight: 700;
+}
+
+.SubscriptionInput-InputBox {
+    height: 60px;
+    margin-top: 5px;
+}
+
+.SubscriptionInput-InputField {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+    overflow: visible;
+    height: 100%;
+    width: 100%;
+    border: 1px solid silver;
+    border-radius: 5px;
+    font-size: 26px;
+    font-weight: 300;
+    padding-left: 17px; 
+    padding-right: 17px;
+}
+
+@media all and (max-width: 1730px) {
+    .SubscriptionBlock {
+        background-size: 175px, 175px;
+    }
+}
+
+@media all and (max-width: 1550px) {
+    .SubscriptionBlock {
+        background-image: none;
+    }
+}
+
+@media all and (max-width: 950px) {
+    .SubscriptionForm-Subheading {
+        height: 70px;
+        margin-left: 15%;
+        margin-right: 15%;
+        text-align: center;
+    }
+    .SubscriptionForm-Subheading_de {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .SubscriptionForm-Heading_de .SubscriptionForm-HeadingText {
+        font-size: 40px;
+    }
+    
+    .SubscriptionForm-Subheading_de .SubscriptionForm-SubheadingText {
+        font-size: 26px;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 770px) {
+    .SubscriptionForm {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .SubscriptionForm-Heading {
+        height: 30px;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+    
+    .SubscriptionForm-HeadingText {
+        font-size: 28px;
+    }
+
+    .SubscriptionForm-Heading_de .SubscriptionForm-HeadingText {
+        font-size: 28px;
+    }
+    
+    .SubscriptionForm-Subheading {
+        margin-top: 25px;
+        margin-bottom: 70px;
+        height: 70px;
+        line-height: 1.4;
+    }
+    
+    .SubscriptionForm-SubheadingText {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .SubscriptionForm-Subheading_de .SubscriptionForm-SubheadingText {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    
+    .SubscriptionForm-InputList {
+        width: 100%;
+    }
+    
+    .SubscriptionInput {
+        height: 85px;
+        width: 47%;
+        margin-bottom: 35px;
+        min-width: 170px;
+    }
+
+    .SubscriptionInput_name {
+        margin-right: 6%;
+    }
+
+    .SubscriptionInput_email {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .SubscriptionForm-PrivacyCaption {
+        height: 30px;
+    }
+    
+    .SubscriptionForm-PrivacyCaptionText {
+        font-size: 16px;
+    }
+    
+    .SubscriptionForm-Button {
+        margin-top: 80px;
+        margin-bottom: 90px;
+        width: 280px;
+        font-size: 28px;
+        letter-spacing: .1ex;
+    }
+
+    .SubscriptionInput-Title {
+        height: 35px;
+        align-items: flex-start;
+    }
+
+    .SubscriptionInput-TitleText {
+        font-size: 24px;
+    }
+
+    .SubscriptionInput-InputBox {
+        height: 50px;
+        margin-top: 0;
+    }
+
+    .SubscriptionInput-InputField {
+        font-size: 24px;
+        padding-left: 15px; 
+        padding-right: 15px;
+    }
+}
+
+
+@media all and (max-width: 570px) {
+    .SubscriptionForm-SubheadingText {
+        font-size: 22px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .SubscriptionInput {
+        width: 100%
+    }
+    
+    .SubscriptionInput_name {
+        margin-right: 0;
+    }
+
+    .SubscriptionForm-Heading_de .SubscriptionForm-HeadingText {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .SubscriptionForm-Subheading_de {
+        margin-bottom: 25px;
+    }
+    
+    .SubscriptionForm-SubheadingText {
+        font-size: 21px;
+    }
+    
+    .SubscriptionForm-HeadingText {
+        font-size: 26px;
+    }
+
+    .SubscriptionForm-Heading_de .SubscriptionForm-HeadingText {
+        font-size: 26px;
+    }
+
+    .SubscriptionForm-Subheading_de .SubscriptionForm-SubheadingText {
+        font-size: 20px;
+    }
+
+    .SubscriptionForm-PrivacyCaption_de {
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .SubscriptionForm {
+        padding-left: 8vw;
+        padding-right: 8vw;
+        box-shadow: 0px 0px 2vw darkgrey;
+        border-radius: 2vw;
+    }
+    
+    .SubscriptionForm-Heading {
+        height: 6vw;
+    }
+
+    .SubscriptionForm-Heading_de {
+        padding-bottom: 5vw;
+    }
+    
+    .SubscriptionForm-HeadingText {
+        font-size: 5.6vw;
+        text-align: center;
+    }
+
+    .SubscriptionForm-Heading_de .SubscriptionForm-HeadingText {
+        font-size: 7vw;
+        text-align: center;
+    }
+    
+    .SubscriptionForm-Subheading {
+        margin-top: 5vw;
+        margin-bottom: 10vw;
+        height: 14vw;
+    }
+
+    .SubscriptionForm-Subheading_de {
+        margin-bottom: 5vw;
+    }
+    
+    .SubscriptionForm-SubheadingText {
+        font-size: 4.3vw;
+    }
+
+    .SubscriptionForm-Subheading_de .SubscriptionForm-SubheadingText {
+        font-size: 3.9vw;
+    }
+
+    .SubscriptionInput {
+        height: 17vw;
+        margin-bottom: 7vw;
+    }
+
+    .SubscriptionInput_email {
+        margin-bottom: 1vw;
+    }
+    
+    .SubscriptionForm-PrivacyCaption {
+        height: 6vw;
+    }
+    
+    .SubscriptionForm-PrivacyCaptionText {
+        font-size: 3.9vw;
+    }
+    
+    .SubscriptionForm-Button {
+        margin-top: 16vw;
+        margin-bottom: 18vw;
+        width: 56vw;
+        font-size: 5vw;
+        letter-spacing: .1ex;
+    }
+
+    .SubscriptionInput-Title {
+        height: 7vw;
+        margin-bottom: 1vw;
+    }
+
+    .SubscriptionInput-TitleText {
+        font-size: 5.5vw;
+    }
+
+    .SubscriptionInput-InputBox {
+        height: 10vw;
+    }
+
+    .SubscriptionInput-InputField {
+        font-size: 5.5vw;
+        padding-left: 3vw; 
+        padding-right: 3vw;
+    }
+
+    .SubscriptionForm-PrivacyCaption_de {
+        margin-top: 6vw;
+    }
+}

@@ -60,7 +60,7 @@
     }
 }
 
-@media all and (max-width: 650px) {
+@media all and (max-width: 770px) {
     .Feature {
         width: 240px;
         min-width: 0;

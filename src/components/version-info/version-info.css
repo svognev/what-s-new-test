@@ -51,7 +51,7 @@
     }
 }
 
-@media all and (max-width: 650px) {
+@media all and (max-width: 770px) {
     .VersionInfo {
         display: none;
     }
@@ -67,15 +67,21 @@
     } 
     
     .FeaturesList {
-        padding-left: 15px;
         flex-wrap: wrap;
         min-width: 600px;
-        justify-content: left;
+        justify-content: center;
     }
 
     .VersionInfo-SeeAll {
         margin-top: 15px;
-        margin-bottom: 15px;
+        margin-bottom: 35px;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .FeaturesList {
+        padding-left: 15px;
+        justify-content: left;
     }
 }
 
@@ -92,7 +98,7 @@
     
     .VersionInfo-SeeAll {
         margin-top: 3vw;
-        margin-bottom: 3vw;
+        margin-bottom: 7vw;
     }
     .SeeAllFeatures-Link {
         font-size: 5.2vw;

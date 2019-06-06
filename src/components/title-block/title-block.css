@@ -31,8 +31,8 @@
 .TitleSubheading {
     height: 70px;
     text-align: center;
-    padding-left: 18%;        
-    padding-right: 18%;
+    padding-left: 25%;        
+    padding-right: 25%;
 }
 
 .TitleSubheading_de {
@@ -46,7 +46,153 @@
     line-height: 1.4;
 }
 
-@media all and (max-width: 910px) {
+@media all and (max-width: 1910px) {
+    .TitleSubheading {
+        padding-left: 24%;        
+        padding-right: 24%;
+    } 
+    .TitleSubheading_de {
+        padding-left: 12%;        
+        padding-right: 12%;
+    }
+}
+
+@media all and (max-width: 1835px) {
+    .TitleSubheading {
+        padding-left: 23%;        
+        padding-right: 23%;
+    }
+    .TitleSubheading_de {
+        padding-left: 12%;        
+        padding-right: 12%;
+    }
+}
+
+@media all and (max-width: 1765px) {
+    .TitleSubheading {
+        padding-left: 22%;        
+        padding-right: 22%;
+    } 
+    .TitleSubheading_de {
+        padding-left: 12%;        
+        padding-right: 12%;
+    }
+}
+
+@media all and (max-width: 1700px) {
+    .TitleSubheading {
+        padding-left: 21%;        
+        padding-right: 21%;
+    }   
+    .TitleSubheading_de {
+        padding-left: 12%;        
+        padding-right: 12%;
+    }
+}
+
+@media all and (max-width: 1645px) {
+    .TitleSubheading {
+        padding-left: 20%;        
+        padding-right: 20%;
+    }    
+    .TitleSubheading_de {
+        padding-left: 12%;        
+        padding-right: 12%;
+    }
+}
+
+@media all and (max-width: 1590px) {
+    .TitleSubheading {
+        padding-left: 19%;        
+        padding-right: 19%;
+    }  
+    .TitleSubheading_de {
+        padding-left: 12%;        
+        padding-right: 12%;
+    }
+}
+
+@media all and (max-width: 1540px) {
+    .TitleSubheading {
+        padding-left: 18%;        
+        padding-right: 18%;
+    }  
+    .TitleSubheading_de {
+        padding-left: 12%;        
+        padding-right: 12%;
+    }
+}
+
+@media all and (max-width: 1490px) {
+    .TitleSubheading {
+        padding-left: 17%;        
+        padding-right: 17%;
+    }  
+    .TitleSubheading_de {
+        padding-left: 12%;        
+        padding-right: 12%;
+    }
+}
+
+@media all and (max-width: 1445px) {
+    .TitleSubheading {
+        padding-left: 16%;        
+        padding-right: 16%;
+    }  
+    .TitleSubheading_de {
+        padding-left: 12%;        
+        padding-right: 12%;
+    }
+}
+
+@media all and (max-width: 1405px) {
+    .TitleSubheading {
+        padding-left: 15%;        
+        padding-right: 15%;
+    } 
+    .TitleSubheading_de {
+        padding-left: 12%;        
+        padding-right: 12%;
+    }
+}
+
+@media all and (max-width: 1365px) {
+    .TitleSubheading {
+        padding-left: 14%;        
+        padding-right: 14%;
+    } 
+    .TitleSubheading_de {
+        padding-left: 12%;        
+        padding-right: 12%;
+    }
+}
+
+@media all and (max-width: 1325px) {
+    .TitleSubheading {
+        padding-left: 13%;        
+        padding-right: 13%;
+    } 
+    .TitleSubheading_de {
+        padding-left: 12%;        
+        padding-right: 12%;
+    }
+}
+
+@media all and (max-width: 1290px) {
+    .TitleSubheading {
+        padding-left: 12%;        
+        padding-right: 12%;
+    } 
+    .TitleSubheading_de {
+        padding-left: 12%;        
+        padding-right: 12%;
+    }
+}
+
+
+
+
+@media all and (max-width: 915px) {
     .TitleBlock-Heading {
         margin-top: 95px;
     }
@@ -57,10 +203,7 @@
 }
 
 
-@media all and (max-width: 650px) {
-    .mainContent {
-        min-width: 0;
-    }
+@media all and (max-width: 770px) {
 
     .TitleBlock {
         height: 550px;

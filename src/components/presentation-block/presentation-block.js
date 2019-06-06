@@ -1,7 +1,8 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 import "./presentation-block.css";
 
-const PresentationBlock = ({lang, number, title, innovation}) => {
+const PresentationBlock = ({lang, number, title, innovation, history}) => {
     const captionText1 = lang === "en" 
         ? "A new feature of " 
         : "Neue Funktionen von ";
@@ -31,12 +32,12 @@ const PresentationBlock = ({lang, number, title, innovation}) => {
           </span>
         </div>
         <div className="PresentationBlock-Button">
-          <button className="PresentationButton">
-            {buttonText}
-          </button>
+            <button className="PresentationButton" onClick={() => { history.push(`${lang}/${number.replace(".", "-")}`) }}>
+              {buttonText}
+            </button>
         </div>
       </div>
     );
 }
 
-export default PresentationBlock;
+export default withRouter(PresentationBlock);

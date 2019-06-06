@@ -1,0 +1,26 @@
+.VersionPage {
+    margin-top: 130px;
+    margin-left: 90px;
+    margin-right: 4%;
+    margin-bottom: 165px;
+    display: flex;
+    flex-flow: column;
+}
+
+@media all and (max-width: 770px) {
+    .VersionPage {
+        margin-top: 85px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 80px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .VersionPage {
+        margin-top: 15vw;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        margin-bottom: 6vw;
+    }
+}

@@ -1,0 +1,130 @@
+.FeatureDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.FeatureDetails_reverse {
+    flex-direction: row-reverse;
+}
+
+.FeatureDetails-LeftSide, .FeatureDetails-RightSide {
+    min-height: 325px;
+    width: 47%;
+}
+
+.FeatureDescription-Heading {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.FeatureDescription-Icon {
+    height: 65px;
+    width: 65px;
+    min-width: 65px;
+    min-height: 65px;
+    background-position: center;
+    background-size: contain;
+}
+
+.FeatureDescription-HeadingTextBox {
+    margin-left: 25px;
+}
+
+.FeatureDescription-HeadingText {
+    font-size: 26px;
+}
+
+.FeatureDescription-TextBox {
+    margin-top: 65px;
+}
+
+.FeatureDescription-Text {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.FeatureIllustration {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.FeatureIllustration-Image_withShadow {
+    box-shadow: 0px 0px 10px lightgrey;
+}
+
+.FeatureDetails_reverse .FeatureIllustration {
+    justify-content: flex-end;
+}
+
+.FeatureIllustration-Image {
+    max-width: 100%;
+}
+
+@media all and (max-width: 770px) {
+    .FeatureDetails {
+        margin-bottom: 80px;
+        flex-direction: column;
+    }
+
+    .FeatureDetails-LeftSide, .FeatureDetails-RightSide {
+        width: 100%;
+    }
+
+    .FeatureDetails-LeftSide {
+        margin-bottom: 35px;
+    }
+
+    .FeatureDescription-HeadingText {
+        font-size: 24px;
+    }
+
+    .FeatureDescription-TextBox {
+        margin-top: 35px;
+    }
+
+    .FeatureDescription-Text {
+        font-size: 21px;
+    }
+
+    .FeatureIllustration, .FeatureDetails_reverse .FeatureIllustration {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .FeatureDetails {
+        margin-bottom: 16vw;
+    }
+
+    .FeatureDetails-LeftSide {
+        margin-bottom: 7vw;
+    }
+
+    .FeatureDescription-HeadingText {
+        font-size: 5.5vw;
+    }
+
+    .FeatureDescription-TextBox {
+        margin-top: 7vw;
+    }
+
+    .FeatureDescription-Text {
+        font-size: 5vw;
+    }
+
+    .FeatureDescription-Icon {
+        height: 13vw;
+        width: 13vw;
+    }
+    
+    .FeatureDescription-HeadingTextBox {
+        margin-left: 5vw;
+    }
+
+    .FeatureIllustration-Image_withShadow {
+        box-shadow: 0px 0px 2vw lightgrey;
+    }
+}

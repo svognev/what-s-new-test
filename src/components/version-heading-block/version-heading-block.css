@@ -1,0 +1,78 @@
+.VersionHeadingBlock {
+    height: 620px;
+    background-repeat: no-repeat;
+    background-size: 1090px;
+    background-position: right;
+    background-image: url(../../media/version-title-background.jpg)
+}
+
+.VersionHeading{
+    margin-top: 160px;
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.VersionHeading-Text {
+    font-weight: 900;
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    -o-user-select: none; 
+    -webkit-user-select: none;
+}
+
+.VersionHeading-Text_desktop {
+    display: inline;
+    font-size: 135px;
+    color: rgb(0, 123, 255);
+}
+
+.VersionHeading-Text_mobile {
+    display: none;
+}
+
+@media all and (max-width: 1250px) {
+    .VersionHeadingBlock {
+        background-position: left;
+        margin-right: -5%;
+    }
+}
+
+@media all and (max-width: 770px) {
+
+    .VersionHeadingBlock {
+        height: 140px;
+        background-image: none;
+    }
+
+    .VersionHeading{
+        margin-top: 0;
+        height: 55px;
+        justify-content: center;
+    }
+
+    .VersionHeading-Text_mobile {
+        display: inline;
+        font-size: 47px;
+        font-weight: 700;
+    }
+
+    .VersionHeading-Text_desktop {
+        display: none;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .VersionHeadingBlock {
+        height: 25vw;
+    }
+
+    .VersionHeading{
+        height: 11vw;
+    }
+
+    .VersionHeading-Text_mobile {
+        font-size: 11vw;
+    }
+}
