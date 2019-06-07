@@ -2,7 +2,7 @@ import React from "react";
 import "./feature-details.css";
 
 const FeatureDetails = (props) => {
-    const { title, icon, image, reverse } = props;
+    const { title, icon, image, reverse, first } = props;
     const text = props.text.split("\n").map((item, key) => { 
         return <span key={key}>{item}<br/></span> 
     })
@@ -10,6 +10,9 @@ const FeatureDetails = (props) => {
     let FeatureDetailsClass = "FeatureDetails";
     if (reverse) {
         FeatureDetailsClass += " FeatureDetails_reverse";
+    }
+    if (first) {
+        FeatureDetailsClass += " FeatureDetails_first";
     }
 
     return (
