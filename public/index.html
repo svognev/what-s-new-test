@@ -267,7 +267,7 @@
                             </div> 
                             <div class="t228__leftside"> 
                                 <div class="t228__leftcontainer"> 
-                                    <a href="%PUBLIC_URL%/#/en" style="color:#ffffff;font-size:18px;font-weight:700;letter-spacing:1.5px;">
+                                    <a href="%PUBLIC_URL%/#/en" onclick="returnLinks()" style="color:#ffffff;font-size:18px;font-weight:700;letter-spacing:1.5px;">
                                         <img 
                                           src="https://www.smashdocs.net/images/tild6533-6162-4566-b033-323133383234__logo_white.png" 
                                           class="t228__imglogo t228__imglogomobile" 
@@ -384,7 +384,7 @@
                             <div class="t282__menu__content "> 
                                 <div class="t282__logo__container" style="height:75px;"> 
                                     <div class="t282__logo__content">
-                                        <a class="t282__logo" href="%PUBLIC_URL%/#/en" style="color:#ffffff;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">
+                                        <a class="t282__logo" href="%PUBLIC_URL%/#/en" onclick="returnLinks()" style="color:#ffffff;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">
                                             <img src="https://www.smashdocs.net/images/tild3162-6536-4437-a334-626337633636__tild633333314835a235.png" class="t280__logo__img" imgfield="img" alt="Sitename">
                                         </a>
                                     </div> 
@@ -917,7 +917,7 @@
                             </div> 
                             <div class="t228__leftside"> 
                                 <div class="t228__leftcontainer"> 
-                                    <a href="%PUBLIC_URL%/#/de" style="color:#ffffff;font-size:18px;font-weight:700;letter-spacing:1.5px;">
+                                    <a href="%PUBLIC_URL%/#/de" onclick="returnLinks()" style="color:#ffffff;font-size:18px;font-weight:700;letter-spacing:1.5px;">
                                         <img 
                                           src="https://www.smashdocs.net/images/tild6533-6162-4566-b033-323133383234__logo_white.png" 
                                           class="t228__imglogo t228__imglogomobile" 
@@ -1043,7 +1043,7 @@
                             <div class="t282__menu__content "> 
                                 <div class="t282__logo__container" style="height:75px;"> 
                                     <div class="t282__logo__content">
-                                        <a class="t282__logo" href="%PUBLIC_URL%/#/de" style="color:#ffffff;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">
+                                        <a class="t282__logo" href="%PUBLIC_URL%/#/de"  onclick="returnLinks()" style="color:#ffffff;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;">
                                             <img src="https://www.smashdocs.net/images/tild3430-6234-4530-b364-333066363364__4259f7f446e14f018ff8.png" class="t280__logo__img" imgfield="img" alt="Sitename">
                                         </a>
                                     </div> 
@@ -1566,6 +1566,16 @@
                     document.title = "SMASHDOCs – What's new";
                 }
                 console.log(1);
+            }
+            function returnLinks(id) {
+              const linksArray = document.getElementsByClassName(`changeLangLink`);
+              for (let i = 0; i < linksArray.length; i++) {
+                if (linksArray[i].href.includes("/de")) {
+                  linksArray[i].href = `${window.PUBLIC_URL}/#/de/`;
+                } else {
+                  linksArray[i].href = `${window.PUBLIC_URL}/#/en/`;
+                }
+              }
             }
         </script>
         <div id="root_de"></div>
