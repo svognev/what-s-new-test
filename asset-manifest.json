@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/what-s-new-test/static/css/main.95cf453a.chunk.css",
-    "main.js": "/what-s-new-test/static/js/main.f14b5e85.chunk.js",
-    "main.js.map": "/what-s-new-test/static/js/main.f14b5e85.chunk.js.map",
+    "main.js": "/what-s-new-test/static/js/main.d1556c1d.chunk.js",
+    "main.js.map": "/what-s-new-test/static/js/main.d1556c1d.chunk.js.map",
     "runtime~main.js": "/what-s-new-test/static/js/runtime~main.34cc18f6.js",
     "runtime~main.js.map": "/what-s-new-test/static/js/runtime~main.34cc18f6.js.map",
     "static/js/2.b3a7012a.chunk.js": "/what-s-new-test/static/js/2.b3a7012a.chunk.js",
     "static/js/2.b3a7012a.chunk.js.map": "/what-s-new-test/static/js/2.b3a7012a.chunk.js.map",
     "index.html": "/what-s-new-test/index.html",
-    "precache-manifest.72dae94b98f59ac2a5740176130586b1.js": "/what-s-new-test/precache-manifest.72dae94b98f59ac2a5740176130586b1.js",
+    "precache-manifest.21121f61267ea55d4801c0c29293b89a.js": "/what-s-new-test/precache-manifest.21121f61267ea55d4801c0c29293b89a.js",
     "service-worker.js": "/what-s-new-test/service-worker.js",
     "static/css/main.95cf453a.chunk.css.map": "/what-s-new-test/static/css/main.95cf453a.chunk.css.map",
     "static/media/version-title.css": "/what-s-new-test/static/media/icon-arrow-up.d43b0582.svg",
