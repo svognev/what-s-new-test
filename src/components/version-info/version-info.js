@@ -28,7 +28,7 @@ const VersionInfo = ({features, lang, number, history}) => {
               { getFeatures(features, 3) }
             </div>
             <div className="VersionInfo-SeeAll SeeAllFeatures">
-              <a className="SeeAllFeatures-Link" onClick={() => { history.push(`${lang}/${number.replace(".", "-")}`) }} >{seeAllButtonText}<div className="SeeAllFeatures-Arrow"></div></a>
+              <button className="SeeAllFeatures-Link" onClick={() => { history.push(`${lang}/${number.replace(".", "-")}`) }} >{seeAllButtonText}<div className="SeeAllFeatures-Arrow"></div></button>
             </div>
         </div>
 
@@ -37,7 +37,7 @@ const VersionInfo = ({features, lang, number, history}) => {
             { getFeatures(features, 4, true) }
           </div>
           <div className="VersionInfo-SeeAll SeeAllFeatures">
-            <a className="SeeAllFeatures-Link" onClick={() => { history.push(`${lang}/${number.replace(".", "-")}`) }} >{seeAllButtonText}<div className="SeeAllFeatures-Arrow"></div></a>
+            <button className="SeeAllFeatures-Link" onClick={() => { history.push(`${lang}/${number.replace(".", "-")}`) }} >{seeAllButtonText}<div className="SeeAllFeatures-Arrow"></div></button>
           </div>
         </div>
       </div>       

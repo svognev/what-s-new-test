@@ -55,7 +55,7 @@ class App extends Component {
                 }} />
 
             <Route path={`/${lang}`} exact
-              render={({}) => {
+              render={() => {
                  changeLang(lang);
                  scrollTo(0, 0);
 

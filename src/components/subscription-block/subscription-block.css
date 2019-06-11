@@ -3,7 +3,7 @@
     background-color: white;
     display: flex;
     justify-content: center;
-    /*background-image: url(../media/form-back-1.png), url(../media/form-back-2.png);*/
+    /*background-image: url(../../media/form-back-1.png), url(../../media/form-back-2.png);*/
     background-repeat: no-repeat, no-repeat;
     background-size: 250px, 250px;
     background-position: top left, top right;
@@ -148,6 +148,50 @@
 .SubscriptionInput-InputBox {
     height: 60px;
     margin-top: 5px;
+    position: relative;
+}
+
+.SubscriptionInput-ArrowBox {
+    height: 100%;
+    width: 45px;
+    left: 100%;
+    margin-left: -45px;
+    top: 0px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    -o-user-select: none; 
+    -webkit-user-select: none;
+}
+
+.SubscriptionInput-Arrow {
+    height: 37.5%;
+    background-repeat: no-repeat;
+    background-size: 27%;
+    opacity: 0.75;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    -o-user-select: none; 
+    -webkit-user-select: none;
+}
+
+.SubscriptionInput-Arrow:hover:active {
+    opacity: 1;
+    background-size: 29%;
+}
+
+.SubscriptionInput-Arrow_up {
+    background-image: url(../../media/icon-grey-arrow-up.svg);
+    background-position: bottom center; 
+}
+
+.SubscriptionInput-Arrow_down {
+    background-image: url(../../media/icon-grey-arrow-down.svg);
+    background-position: top center; 
 }
 
 .SubscriptionInput-InputField {
@@ -164,7 +208,13 @@
     font-weight: 300;
     padding-left: 17px; 
     padding-right: 17px;
+    outline: none;
 }
+
+.SubscriptionInput-InputField:focus {
+    box-shadow: 0 0 3px 0.3px rgb(0, 123, 255);
+}
+
 
 @media all and (max-width: 1730px) {
     .SubscriptionBlock {
@@ -290,6 +340,25 @@
     .SubscriptionInput-InputBox {
         height: 50px;
         margin-top: 0;
+    }
+
+    .SubscriptionInput-ArrowBox {
+        width: 37.5px;
+        margin-left: -37.5px;
+    }
+
+    .SubscriptionInput-Arrow {
+        opacity: 0.65;
+    }
+
+    .SubscriptionInput-Arrow_up {
+        background-image: url(../../media/icon-grey-arrow-up-mobile.svg);
+        background-position: bottom center; 
+    }
+    
+    .SubscriptionInput-Arrow_down {
+        background-image: url(../../media/icon-grey-arrow-down-mobile.svg);
+        background-position: top center; 
     }
 
     .SubscriptionInput-InputField {
@@ -425,6 +494,11 @@
 
     .SubscriptionInput-InputBox {
         height: 10vw;
+    }
+
+    .SubscriptionInput-ArrowBox {
+        width: 7.5vw;
+        margin-left: -7.5vw;
     }
 
     .SubscriptionInput-InputField {

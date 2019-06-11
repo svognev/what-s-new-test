@@ -53,6 +53,8 @@
         <script>
             window.PUBLIC_URL = "%PUBLIC_URL%";
             window.dataLayer = window.dataLayer || [];
+            function checkSize_30053892(){ var content = $("#footer_30053892 .t345-text").width() + $("#footer_30053892 .t345-socials").width(); var container = $("#footer_30053892 .t345-container").width() - 30; if (content > container ) { $("#footer_30053892 .t345-container").addClass('t345-socials_block'); } else { $("#footer_30053892 .t345-container").removeClass('t345-socials_block'); } } 
+            function checkSize_55527052(){ var content = $("#footer_55527052 .t345-text").width() + $("#footer_55527052 .t345-socials").width(); var container = $("#footer_55527052 .t345-container").width() - 30; if (content > container ) { $("#footer_55527052 .t345-container").addClass('t345-socials_block'); } else { $("#footer_55527052 .t345-container").removeClass('t345-socials_block'); } } 
             $(document).ready(function() { 
                 t228_highlight(); 
                 t228_checkAnchorLinks('28609354'); 
@@ -68,7 +70,28 @@
                 t398_init('31761874');
                 t282_showMenu('29038616'); 
                 t282_highlight();
+                checkSize_30053892(); 
+                $(window).resize(checkSize_30053892);
+                setTimeout(function(){ t281_initPopup('28793274'); }, 500);
             });              
+            $(document).ready(function() { 
+                t228_highlight(); 
+                t228_checkAnchorLinks('94854742');
+                $(window).resize(function() { t228_setBg('94854742'); });
+                t228_setBg('94854742');
+                t228_createMobileMenu('94854742');
+                t398_init('94854744');
+                t398_init('94854745');
+                t282_showMenu('94854743'); 
+                t282_changeSize('94854743');	
+                t282_highlight();
+                $(window).resize(function() { t282_changeSize('94854743'); });
+                t398_init('94854746');
+                t398_init('94854747');
+                checkSize_55527052(); 
+                $(window).resize(checkSize_55527052);
+                setTimeout(function(){ t281_initPopup('56098917'); }, 500);
+            });
         </script>
 
         <style type="text/css">
@@ -758,10 +781,6 @@
                             </div>
                         </div>
                     </div>
-                    <script type="text/javascript"> 
-                        function checkSize_30053892(){ var content = $("#footer_30053892 .t345-text").width() + $("#footer_30053892 .t345-socials").width(); var container = $("#footer_30053892 .t345-container").width() - 30; if (content > container ) { $("#footer_30053892 .t345-container").addClass('t345-socials_block'); } else { $("#footer_30053892 .t345-container").removeClass('t345-socials_block'); } } 
-                        $(document).ready(function() { checkSize_30053892(); $(window).resize(checkSize_30053892); });
-                    </script>
                 </div>
                 <div id="rec28793274" class="r t-rec" style="opacity: 1;" data-animationappear="off" data-record-type="316">
                     <div class="t281"> 
@@ -869,12 +888,6 @@
                                 </div> 
                             </div>
                         </div>
-                        <script type="text/javascript">
-                            $(document).ready(function(){ setTimeout(function(){ t281_initPopup('28793274'); }, 500);});
-                        </script>
-                        <script type="text/javascript">
-                            $(document).ready(function() {});
-                        </script>
                     </div>
                 </div>
             </div>
@@ -1011,15 +1024,6 @@
                         </div> 
                     </div>
                 </div>
-                
-                <script type="text/javascript"> 
-                    $(document).ready(function() { t228_highlight(); t228_checkAnchorLinks('94854742'); });
-                    $(window).resize(function() { t228_setBg('94854742'); });
-                    $(document).ready(function() { t228_setBg('94854742'); }); 
-                </script>
-                <script type="text/javascript"> 
-                    $(document).ready(function() { t228_createMobileMenu('94854742'); }); 
-                </script>
                 </div>
                 <div id="rec94854743" class="r t-rec t-screenmax-480px"  data-animationappear="off" data-record-type="327" data-screen-max="480px">
                     <div id="nav94854743marker">
@@ -1133,10 +1137,6 @@
                         <div class="t282__overlay t282__closed">
                         </div>
                     </div>
-                    <script type="text/javascript"> 
-                        $(document).ready(function() { t282_showMenu('94854743'); t282_changeSize('94854743');	t282_highlight(); }); 
-                        $(window).resize(function() { t282_changeSize('94854743'); }); 
-                    </script>
                 </div>
                 <div id="rec94854744" class="r t-rec"  data-animationappear="off" data-record-type="398">
                     <div class="t398" data-tooltip-hook="#produkt" data-tooltip-position="bottom" data-add-arrow="on" data-tooltip-margin="15px"> 
@@ -1170,9 +1170,6 @@
                             </ul> 
                         </div>
                     </div>
-                    <script type="text/javascript"> 
-                        $(document).ready(function() { t398_init('94854744'); });
-                    </script>
                 </div>
                 <div id="rec94854745" class="r t-rec"  data-animationappear="off" data-record-type="398">
                     <div class="t398" data-tooltip-hook="#partner_de" data-tooltip-position="bottom" data-add-arrow="on" data-tooltip-margin="15px">
@@ -1191,9 +1188,6 @@
                             </ul>
                         </div>
                     </div>
-                    <script type="text/javascript"> 
-                        $(document).ready(function() { t398_init('94854745'); });
-                    </script> 
                 </div>
                 <div id="rec94854746" class="r t-rec"  data-animationappear="off" data-record-type="398">
                     <div class="t398" data-tooltip-hook="#Einsatzmöglichkeiten" data-tooltip-position="bottom" data-add-arrow="on" data-tooltip-margin="15px"> 
@@ -1217,9 +1211,6 @@
                             </ul> 
                         </div>
                     </div>
-                <script type="text/javascript"> 
-                    $(document).ready(function() { t398_init('94854746'); });
-                </script> 
             </div>
             <div id="rec94854747" class="r t-rec"  data-animationappear="off" data-record-type="398">
                 <div class="t398" data-tooltip-hook="#support_de" data-tooltip-position="bottom" data-add-arrow="on" data-tooltip-margin="15px"> 
@@ -1248,9 +1239,6 @@
                         </ul> 
                     </div>
                 </div>
-                <script type="text/javascript"> 
-                    $(document).ready(function() { t398_init('94854747'); });
-                </script> 
             </div>
             <div id="rec94854740" class="r t-rec"  data-animationappear="off" data-record-type="131">
                 <div class="t123">
@@ -1433,10 +1421,6 @@
                             </div>
                         </div>
                     </div>
-                    <script type="text/javascript"> 
-                        function checkSize_55527052(){ var content = $("#footer_55527052 .t345-text").width() + $("#footer_55527052 .t345-socials").width(); var container = $("#footer_55527052 .t345-container").width() - 30; if (content > container ) { $("#footer_55527052 .t345-container").addClass('t345-socials_block'); } else { $("#footer_55527052 .t345-container").removeClass('t345-socials_block'); } } 
-                        $(document).ready(function() { checkSize_55527052(); $(window).resize(checkSize_55527052); });
-                    </script>
                 </div>
                 <div id="rec56098917" class="r t-rec" style="opacity: 1;" data-animationappear="off" data-record-type="316">
                     <div class="t281"> 
@@ -1544,12 +1528,6 @@
                                 </div> 
                             </div>
                         </div>
-                        <script type="text/javascript">
-                            $(document).ready(function(){ setTimeout(function(){ t281_initPopup('56098917'); }, 500);});
-                        </script>
-                        <script type="text/javascript">
-                            $(document).ready(function() {});
-                        </script>
                     </div>
                 </div>
             </div>

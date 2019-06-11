@@ -37,7 +37,7 @@ const FeatureDetails = (props) => {
             </div>
             <div className="FeatureDetails-RightSide">
                 <div className="FeatureIllustration">
-                    <img className="FeatureIllustration-Image FeatureIllustration-Image_withShadow" src={image} />
+                    <img className="FeatureIllustration-Image FeatureIllustration-Image_withShadow" src={image} alt=""/>
                 </div>
             </div>
         </div>
