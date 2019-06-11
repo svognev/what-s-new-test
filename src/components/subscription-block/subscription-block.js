@@ -99,8 +99,8 @@ class SubcriptionBlock extends Component {
                                     className="SubscriptionInput-InputField" 
                                     value={this.state.salutation} 
                                     onChange={(e) => this.changeInput(e, "salutation")}
-                                    onFocus={(e) => { if (e.target.value === this.state.salutation) { e.target.value=""; }}}
-                                    onBlur={(e) => { if (e.target.value === "") { e.target.value = this.state.salutation}}}
+                                    onFocus={(e) => { if (this.salutations.indexOf(e.target.value) !== -1) { e.target.value=""; }}}
+                                    onBlur={(e) => { if (e.target.value === "") { e.target.value = this.state.salutation }}}
                                 >
                                 </input>
                                 <div className="SubscriptionInput-ArrowBox">
