@@ -10,7 +10,7 @@ class VersionInfoService {
     }
 
     async getAllVersions(lang) {
-        const versions = await this.getInfo(`${this._base}what-s-new-fake-server/${lang}`);
+        const versions = await this.getInfo(`${this._base}${lang}-main/versions`);
         document.getElementsByClassName(`footer_${lang}`)[0].style.display = "block";
         return versions;
     }

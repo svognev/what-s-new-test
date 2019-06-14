@@ -1534,7 +1534,6 @@
         </div>
         <script>
             function changeLang(lang = "en") {
-                console.log(lang);
                 document.getElementById(`what-s-new-en`).style.display = "none";
                 document.getElementById(`what-s-new-de`).style.display = "none";
                 document.getElementById(`what-s-new-${lang}`).style.display = "block";
@@ -1543,7 +1542,6 @@
                 } else if (lang === "en") {
                     document.title = "SMASHDOCs – What's new";
                 }
-                console.log(1);
             }
             function returnLinks(id) {
               const linksArray = document.getElementsByClassName(`changeLangLink`);

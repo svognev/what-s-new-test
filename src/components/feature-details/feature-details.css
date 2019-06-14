@@ -9,7 +9,6 @@
 }
 
 .FeatureDetails-LeftSide, .FeatureDetails-RightSide {
-    min-height: 325px;
     width: 47%;
 }
 
@@ -35,6 +34,8 @@
 
 .FeatureDescription-HeadingTextBox {
     margin-left: 25px;
+    overflow-wrap: break-word;
+    overflow: hidden;
 }
 
 .FeatureDescription-HeadingText {

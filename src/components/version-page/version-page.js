@@ -17,6 +17,12 @@ class VersionPage extends Component {
     componentDidMount() {
       this.updateVersionData();
     }
+
+    componentDidUpdate({ versionNumber }) {
+      if (versionNumber !== this.props.versionNumber) {
+        this.updateVersionData();
+      }
+    }
   
     onVersionDataLoaded = versionData => {
       this.setState({ features: versionData });

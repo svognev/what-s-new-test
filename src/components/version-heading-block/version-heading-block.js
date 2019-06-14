@@ -3,6 +3,7 @@ import "./version-heading-block.css";
 
 const VersionHeadingBlock = ({lang, versionNumber}) => {
     const headingText = lang === "en" ? "New in " : "Neu in ";
+    const patchNumber = versionNumber !== "09" ? ".0" : ".7";
     return (
         <div className="VersionHeadingBlock">
             <div className="VersionHeading">
@@ -10,7 +11,7 @@ const VersionHeadingBlock = ({lang, versionNumber}) => {
                     {versionNumber + ".0"}
                 </span>
                 <span className="VersionHeading-Text VersionHeading-Text_mobile">
-                    {headingText}{versionNumber + ".0"}
+                    {headingText}{versionNumber + patchNumber}
                 </span>
             </div>
         </div>
