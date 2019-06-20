@@ -50,9 +50,7 @@
     .Feature {
         margin-left: 10px;
         margin-right: 20px;
-        width: 375px;
         min-width: 375px;
-        min-height: 295px;
     }
 
     .Feature-Title {
