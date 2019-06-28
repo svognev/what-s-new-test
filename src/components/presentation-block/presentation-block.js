@@ -14,15 +14,25 @@ const PresentationBlock = ({lang, number, title, innovation, history}) => {
     const buttonText = lang === "en" 
         ? "READ MORE" 
         : "MEHR LESEN"; 
-        
+
+    let titleFontSize = 90;
+    if (title.length > 12) {
+      titleFontSize = Math.floor(90 - (4 * (title.length - 12)));
+    }
+    
+    console.log(titleFontSize);
+
     return (
         <div className="PresentationBlock">
         <div className="PresentationBlock-TopCaption PresentationCaption">
           <span className="PresentationCaption-Text">
             {captionText1}<span className="PresentationCaption-Text_heavy">{captionText2}{number}</span></span>
         </div>
-        <div className="PresentationBlock-Heading PresentationHeading">
-          <span className="PresentationHeading-Text">
+        <div className="PresentationHeading-Text PresentationBlock-Heading PresentationHeading">
+          <span className="PresentationHeading-Text_desktop" style={{ fontSize: titleFontSize }}>
+            {title.toUpperCase()}
+          </span>
+          <span className="PresentationHeading-Text PresentationHeading-Text_mobile">
             {title.toUpperCase()}
           </span>
         </div>

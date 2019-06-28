@@ -30,24 +30,31 @@
 }
 
 .PresentationBlock-Heading {
-    margin-top: 55px;
+    margin-top: 0;
 } 
 
 .PresentationHeading {
-    height: 75px;
+    height: 190px;
     position: relative;
     min-width: 800px;
+    display: flex;
+    align-items: center;
 }
 
 .PresentationHeading-Text {
     font-weight: 900;
-    font-size: 90px;
-    position: absolute;
-    top: -15px;
+}
+
+.PresentationHeading-Text_desktop {
+    display: inline;
+}
+
+.PresentationHeading-Text_mobile {
+    display: none;
 }
 
 .PresentationBlock-BottomCaption {
-    margin-top: 60px;
+    margin-top: 0;
 }
 
 .PresentationBlock-Button {
@@ -124,14 +131,22 @@
         position: static;
         min-width: 0;
     }
+
+
+    .PresentationHeading-Text_desktop {
+        display: none;
+    }
     
-    .PresentationHeading-Text {
+    .PresentationHeading-Text_mobile {
+        display: inline;
         font-size: 47px;
-        position: static;
     }
     
     .PresentationBlock-BottomCaption {
         margin-top: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .PresentationCaption_mobileBottom {
@@ -191,7 +206,7 @@
         height: 11vw;
     }
     
-    .PresentationHeading-Text {
+    .PresentationHeading-Text_mobile {
         font-size: 9vw;
     }
     
