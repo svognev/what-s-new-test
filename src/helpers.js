@@ -14,3 +14,22 @@ export const replaceLangLinks = (id) => {
     }
   }
 }
+
+export const breakIntoLines = (stringToBreak, maxLength, stringsNum) => {
+  const stringsArr = stringToBreak.split(" ");
+  let newStringsArr = Array(stringsNum).fill("");
+  for (let i = 0, j = 0; i < stringsArr.length; i++) {
+    if (newStringsArr[j].length + stringsArr[i].length + 1 <= maxLength) {
+      newStringsArr[j] += ` ${stringsArr[i]}`
+    } else {
+      if (j < stringsNum - 1) {
+        j++;
+        newStringsArr[j] += stringsArr[i];
+      } else {
+        newStringsArr[j] += ` ${stringsArr.slice(i).join(" ")}`;
+        break;
+      }
+    }
+  }
+  return newStringsArr;
+}

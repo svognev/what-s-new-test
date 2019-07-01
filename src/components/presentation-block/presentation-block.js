@@ -2,6 +2,8 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import "./presentation-block.css";
 
+import { breakIntoLines } from "../../helpers";
+
 const PresentationBlock = ({lang, number, title, innovation, history}) => {
     const captionText1 = lang === "en" 
         ? "A new feature of " 
@@ -15,13 +17,15 @@ const PresentationBlock = ({lang, number, title, innovation, history}) => {
         ? "READ MORE" 
         : "MEHR LESEN"; 
 
-    let titleFontSize = 90;
-    if (title.length > 12) {
-      titleFontSize = Math.floor(90 - (4 * (title.length - 12)));
+    let titleText = <p className="PresentationHeading-Text">{title.toUpperCase()}</p>;
+
+    if (title.length > 18) {
+      titleText = breakIntoLines(title, 17, 2).map(str => {
+        return (<p className="PresentationHeading-Text PresentationHeading-Text_multiline">{str.toUpperCase()}</p>)
+      })
+      console.log(titleText);
     }
     
-    console.log(titleFontSize);
-
     return (
         <div className="PresentationBlock">
         <div className="PresentationBlock-TopCaption PresentationCaption">
@@ -29,12 +33,7 @@ const PresentationBlock = ({lang, number, title, innovation, history}) => {
             {captionText1}<span className="PresentationCaption-Text_heavy">{captionText2}{number}</span></span>
         </div>
         <div className="PresentationHeading-Text PresentationBlock-Heading PresentationHeading">
-          <span className="PresentationHeading-Text_desktop" style={{ fontSize: titleFontSize }}>
-            {title.toUpperCase()}
-          </span>
-          <span className="PresentationHeading-Text PresentationHeading-Text_mobile">
-            {title.toUpperCase()}
-          </span>
+          {titleText}
         </div>
         <div className="PresentationBlock-BottomCaption PresentationCaption PresentationCaption_mobileBottom">
           <span className="PresentationCaption-Text">

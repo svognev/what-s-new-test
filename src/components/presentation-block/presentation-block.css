@@ -35,22 +35,22 @@
 
 .PresentationHeading {
     height: 190px;
-    position: relative;
     min-width: 800px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .PresentationHeading-Text {
     font-weight: 900;
+    font-size: 90px;
 }
 
-.PresentationHeading-Text_desktop {
-    display: inline;
-}
-
-.PresentationHeading-Text_mobile {
-    display: none;
+.PresentationHeading-Text_multiline {
+    font-size: 45px;
+    margin-top: -2px;
+    margin-bottom: -2px;
 }
 
 .PresentationBlock-BottomCaption {
@@ -123,27 +123,30 @@
     }
     
     .PresentationBlock-Heading {
-        margin-top: 50px;
+        margin-top: 0px;
     } 
     
     .PresentationHeading {
-        height: 55px;
-        position: static;
-        min-width: 0;
-    }
-
-
-    .PresentationHeading-Text_desktop {
-        display: none;
+        height: 150px;
+        min-width: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
-    .PresentationHeading-Text_mobile {
-        display: inline;
+    .PresentationHeading-Text {
         font-size: 47px;
+    }
+
+    .PresentationHeading-Text_multiline {
+        font-size: 35px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
     
     .PresentationBlock-BottomCaption {
-        margin-top: 55px;
+        margin-top: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -198,21 +201,18 @@
         font-size: 5vw;
     }
     
-    .PresentationBlock-Heading {
-        margin-top: 10vw;
-    } 
-    
     .PresentationHeading {
-        height: 11vw;
+        height: 30vw;
     }
     
-    .PresentationHeading-Text_mobile {
+    .PresentationHeading-Text {
         font-size: 9vw;
     }
-    
-    .PresentationBlock-BottomCaption {
-        margin-top: 11vw;
+
+    .PresentationHeading-Text_multiline {
+        font-size: 7vw;
     }
+
     .PresentationCaption_mobileBottom {
         height: 16vw;
     }
