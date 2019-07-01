@@ -16,7 +16,7 @@ const VersionTitle = (props) => {
     return (
         <div className="VersionTitle">
           <button className={buttonClassName} onClick={eventHandler} />
-          <span className="VersionTitle-Text">
+          <span className="VersionTitle-Text"  onClick={eventHandler}>
             Version {number} <span className="VersionTitle-Text_releaseDate"><span className="VersionTitle-Text_dash">- </span>{releaseText}{date}</span>
           </span>
         </div>
