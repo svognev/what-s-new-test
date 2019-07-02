@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/what-s-new-test/static/css/main.79c826fa.chunk.css",
+    "main.css": "/what-s-new-test/static/css/main.dc92348b.chunk.css",
     "main.js": "/what-s-new-test/static/js/main.e06b121b.chunk.js",
     "main.js.map": "/what-s-new-test/static/js/main.e06b121b.chunk.js.map",
     "runtime~main.js": "/what-s-new-test/static/js/runtime~main.34cc18f6.js",
@@ -8,9 +8,9 @@
     "static/js/2.b3a7012a.chunk.js": "/what-s-new-test/static/js/2.b3a7012a.chunk.js",
     "static/js/2.b3a7012a.chunk.js.map": "/what-s-new-test/static/js/2.b3a7012a.chunk.js.map",
     "index.html": "/what-s-new-test/index.html",
-    "precache-manifest.c3840479a818d26bbe794ea9c9478650.js": "/what-s-new-test/precache-manifest.c3840479a818d26bbe794ea9c9478650.js",
+    "precache-manifest.eb84cdac56250a526827cecb53168172.js": "/what-s-new-test/precache-manifest.eb84cdac56250a526827cecb53168172.js",
     "service-worker.js": "/what-s-new-test/service-worker.js",
-    "static/css/main.79c826fa.chunk.css.map": "/what-s-new-test/static/css/main.79c826fa.chunk.css.map",
+    "static/css/main.dc92348b.chunk.css.map": "/what-s-new-test/static/css/main.dc92348b.chunk.css.map",
     "static/media/version-title.css": "/what-s-new-test/static/media/icon-arrow-up.d43b0582.svg",
     "static/media/subscription-block.css": "/what-s-new-test/static/media/icon-grey-arrow-up.11c440f0.svg",
     "static/media/version-info.css": "/what-s-new-test/static/media/icon-grey-arrow.d9e67eeb.svg",
