@@ -156,8 +156,8 @@
         height: 80px;
         line-height: 1.4;
         text-align: center;
-        padding-left: 14%;
-        padding-right: 14%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
     
     .PresentationBlock-Button {
@@ -184,6 +184,52 @@
     }
 }
 
+@media all and (max-width: 613px) {
+    .PresentationCaption_mobileBottom {
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+}
+
+@media all and (max-width: 593px) {
+    .PresentationCaption_mobileBottom {
+        padding-left: 13%;
+        padding-right: 13%;
+    }
+}
+
+@media all and (max-width: 580px) {
+    .PresentationCaption_mobileBottom {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+}
+
+@media all and (max-width: 563px) {
+    .PresentationCaption_mobileBottom {
+        padding-left: 11%;
+        padding-right: 11%;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .PresentationCaption_mobileBottom {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media all and (max-width: 536px) {
+    .PresentationCaption-Text {
+        font-size: 24px;
+    }
+    .PresentationCaption_mobileBottom {
+        padding-left: 9%;
+        padding-right: 9%;
+    }
+}
+
+
 @media all and (max-width: 500px) {
     .PresentationBlock {
         height: 218vw;
@@ -198,7 +244,7 @@
     }
     
     .PresentationCaption-Text {
-        font-size: 5vw;
+        font-size: 4.8vw;
     }
     
     .PresentationHeading {
