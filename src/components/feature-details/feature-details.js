@@ -2,8 +2,17 @@ import React from "react";
 import "./feature-details.css";
 
 const FeatureDetails = (props) => {
-    const { title, icon, image, reverse, first } = props;
-    const text = props.text.split("\n").map((item, key) => { 
+    let { title, text, icon, image, reverse, first } = props;
+    text = "No doubt the improvement of our Undo button was the most awaited one. We get it and do our best to bring it to perfection. \n\nSo, what is new here this time?\n\n{Undo went global! Let’s say you edit one paragraph, go into another and edit something else there. Then you press the ”Undo” button. Changes will be reset to the current paragraph first and if you make Undo again, you will land on the previous paragraph and changes will be also reset there.}\n\n{Your Undos are not stopped by weblinks/cross-references anymore. Undo deletes them now as normal content.}\n\n{Undo and Redo buttons are now placed on the toolbar. Very convenient!}";
+    const preparedText = text.split("\n").map((item, key) => { 
+        if (item[0] === "{" && item[item.length - 1] === "}") {
+            return (
+            <div className="ListItem" key={key}>
+                <p className="ListItem-Icon">{"\u2714"}</p>
+                <p className="ListItem-Text">{item.slice(1, item.length - 1)}</p>
+            </div>
+            );
+        }
         return <span key={key}>{item}<br/></span> 
     })
 
@@ -30,7 +39,7 @@ const FeatureDetails = (props) => {
                     </div>
                     <div className="FeatureDescription-TextBox">
                         <span className="FeatureDescription-Text">
-                            {text}
+                            {preparedText}
                         </span>
                     </div>
                 </div>

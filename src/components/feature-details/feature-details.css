@@ -51,6 +51,15 @@
     font-size: 22px;
 }
 
+.ListItem {
+    display: flex;
+}
+
+.ListItem-Icon {
+    margin-right: 20px;
+    color: rgb(0, 123, 255);
+}
+
 .FeatureIllustration {
     display: flex;
     align-items: flex-start;
@@ -123,6 +132,10 @@
 
     .FeatureDescription-Text {
         font-size: 5vw;
+    }
+
+    .ListItem-Icon {
+        margin-right: 4vw;
     }
 
     .FeatureDescription-Icon {
