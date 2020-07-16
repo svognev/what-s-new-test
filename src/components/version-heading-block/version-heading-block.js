@@ -4,16 +4,16 @@ import "./version-heading-block.css";
 const VersionHeadingBlock = ({lang, versionNumber}) => {
     const headingText = lang === "en" ? "New in " : "Neu in ";
     const patchNumber = versionNumber !== "2.09" ? ".0" : ".7";
-    console.log(patchNumber);
+
     return (
         <div className="VersionHeadingBlock">
             <div className="VersionHeading">
-                <span className="VersionHeading-Text VersionHeading-Text_desktop">
+                <h1 className="VersionHeading-Text VersionHeading-Text_desktop">
                     {versionNumber + patchNumber}
-                </span>
-                <span className="VersionHeading-Text VersionHeading-Text_mobile">
+                </h1>
+                <h1 className="VersionHeading-Text VersionHeading-Text_mobile">
                     {headingText}{versionNumber + patchNumber}
-                </span>
+                </h1>
             </div>
         </div>
     );

@@ -21,9 +21,9 @@ const TitleBlock = ({ lang = "en" }) => {
     return (
         <div className="TitleBlock">
             <div className={titleClass}>
-                <span className="TitleHeading-Text">
+                <h1 className="TitleHeading-Text">
                     {titleText}
-                </span>
+                </h1>
             </div>
             <div className={subtitleClass}>
                 <span className="SubtitleHeading-Text">

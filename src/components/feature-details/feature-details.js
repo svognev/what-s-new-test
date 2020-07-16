@@ -31,9 +31,9 @@ const FeatureDetails = (props) => {
                         <div className="FeatureDescription-Icon" style={{ backgroundImage : `url(${icon})`}}>
                         </div>
                         <div className="FeatureDescription-HeadingTextBox">
-                            <span className="FeatureDescription-HeadingText">
+                            <h2 className="FeatureDescription-HeadingText">
                                 {title}
-                            </span>
+                            </h2>
                         </div>
                     </div>
                     <div className="FeatureDescription-TextBox">
